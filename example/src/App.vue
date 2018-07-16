@@ -11,7 +11,7 @@
 				</v-tabs-bar>
 				<v-tabs-items class="ma-5">
 					<v-tabs-content :id="'form'">
-						<v-form-generator :model="model" :schema="schema" :options="options"/>
+						<v-form-generator v-model="model" :schema="schema" :options="options"/>
 					</v-tabs-content>
 					<v-tabs-content :id="'model'">
 						<pre>{{model}}</pre>

@@ -126,16 +126,16 @@
 		},
 		methods: {
 			onBlur: function(){
-				this.$emit('blur')
+				this.$emit('blur', this.localValue)
 			},
 			onChange: function(){
-				this.$emit('change')
+				this.$emit('change', this.localValue)
 			},
 			onFocus: function(){
-				this.$emit('focus')
+				this.$emit('focus', this.localValue)
 			},
 			onInput: function(){
-				this.$emit('input')
+				this.$emit('input', this.localValue)
 			},
 			
 			appendPasswordIconCheckbox(){
